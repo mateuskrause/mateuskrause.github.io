@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin's Daydreams</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header py-4">
+
+            <div class="row align-items-center">
+                <div class="col-12 d-sm-none text-center">
+                    <img src="../images/icon.png" class="header-image mr-2 mb-1">
+                </div>
+                <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start">
+                    <img src="../images/icon.png" class="header-image mr-2 d-none d-sm-block">
+                    <a href="" class="header-link align-self-center">mateuskrause.github.io</a>
+                </div>
+                <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
+                    <a href="" class="header-link mr-2">github</a>
+                    <span>/</span>
+                    <a href="" class="header-link ml-2">contact</a>
+                </div>
+            </div>
+
+            <div class="content py-4">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p class="date">Jul 7, 2020</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend viverra neque, sit amet
+                    elementum sapien dignissim non. Praesent egestas lacus at vulputate pulvinar. Duis non ullamcorper
+                    metus, non cursus mauris. Maecenas pulvinar condimentum lectus, quis vestibulum augue sollicitudin
+                    ac. Donec sed consectetur odio, sed ultricies leo. Ut sem nisl, auctor sed magna sed, sollicitudin
+                    pharetra augue. Cras nec odio laoreet, faucibus est quis, tincidunt orci. Vestibulum a eros a nisi
+                    interdum semper et et tortor. Etiam semper ullamcorper lacus et accumsan. Pellentesque fringilla
+                    aliquet mattis. Aliquam ac laoreet nunc.
+                </p>
+                <pre><code>
+sub start { 1; }
+sub story {
+    my($pkg, $path, $filename, $story_ref, $title_ref, $body_ref) = @_;
+
+    if ( (! $g_blosxom_use_meta) or
+        (defined($meta::markup) and ($meta::markup =~ /^\s*markdown\s*$/i))
+        ){
+            $$body_ref  = Markdown($$body_ref);
+    }
+    1;
+}</code></pre>
+                <p> Sed eu rutrum eros, sit amet gravida eros. Aliquam sollicitudin augue ligula, et imperdiet lacus ultricies nec. Sed sed justo at metus lobortis lacinia. Cras diam nulla, mollis sit amet magna dignissim, varius feugiat orci. Vivamus at mi tortor. Integer faucibus pellentesque leo, quis dapibus elit egestas nec. Nunc hendrerit, mauris in congue egestas, sem elit imperdiet sapien, at rhoncus mauris purus at enim. Fusce fermentum ornare arcu sed viverra. Curabitur nec massa rutrum, tincidunt elit a, luctus dui. Donec eu lacus id dui porta consequat. Donec consectetur arcu ut dui maximus, eu faucibus mauris auctor. </p>
+            </div>
+           
+            <div class="footer mt-4">
+                <i>Penguin's Daydream</i>
+                <p>Made using a <a href="">custom script</a> and <a href="">Bootstrap</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
