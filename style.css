@@ -1,12 +1,6 @@
 * {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    /* border: 1px solid red; */
-}
-
-p {
-    margin-bottom: 0px !important;
-    text-align: justify;
 }
 
 .container {
@@ -27,12 +21,6 @@ p {
     height: 2.5pc;
 }
 
-.date {
-    color: gray;
-    font-size: 14px;
-    margin-bottom: 16px !important;
-}
-
 /* sticky footer */
 /* .footer {
     position: absolute;
@@ -42,4 +30,45 @@ p {
 
 .footer * {
     font-size: 14px !important;
+}
+
+/* content configs */
+
+.content figure{
+    text-align: center;
+    margin-top: 16px;
+}
+
+.content figcaption {
+    font-size:90%;
+    color:#6c757d;
+    margin-top: 4px;
+}
+
+.content p {
+    margin-bottom: 0px !important;
+    text-align: justify;
+}
+
+.content pre {
+    margin-top: 16px !important;
+    background-color: #eee;
+    padding: 1pc
+}
+
+.content code {
+    background-color: #eee;
+    color: black !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.content img {
+    max-width: 100% !important;
+}
+
+.content .date {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 16px !important;
 }
