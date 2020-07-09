@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penguin's Daydreams</title>
+    <title>Blog Capabilities: Lorem ipsum dolor sit amet, consectetur adipiscing elit. - Penguin's Daydreams</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../images/site/favicon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -34,7 +34,7 @@
 
 <div class="content py-4">
 
-<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+<h3>Blog Capabilities: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 <p class="date">Jul 7, 2020</p>
 
 <p>
@@ -45,12 +45,31 @@ ac. Donec sed consectetur odio, sed ultricies leo. Ut sem nisl, auctor sed magna
 pharetra augue. Cras nec odio laoreet, faucibus est quis, tincidunt orci.
 </p>
 
+<div class="table-contents">
+<ol>
+<li><a href="#anchor-1">First Point Header</a></li>
+<li><a href="#anchor-2">Second Point Header</a>
+<ol>
+<li><a href="#anchor-sub-2.1">First Sub Point</a></li>
+</ol>
+</li>
+<li><a href="#anchor-3">Third Point Header</a></li>
+</ol>
+</div>
+
+<p id="anchor-1">
+Curabitur nec odio orci. Sed ac sagittis mauris. Aenean eget bibendum odio. 
+Morbi dignissim metus faucibus cursus facilisis. Vestibulum nec ullamcorper urna, 
+in luctus justo. Maecenas mollis <code>make install</code> ultricies placerat. Donec porta magna ut turpis tincidunt, 
+at scelerisque purus viverra. Suspendisse feugiat metus mattis tellus ornare fringilla.
+</p>
+
 <figure>
 <img src="../images/articles/pingu.gif">
 <figcaption>A caption for the above image.</figcaption>
 </figure>
 
-<p>Sed eu rutrum eros, sit amet gravida eros. Aliquam sollicitudin augue ligula, et imperdiet lacus
+<p id="anchor-2">Sed eu rutrum eros, sit amet gravida eros. Aliquam sollicitudin augue ligula, et imperdiet lacus
 ultricies nec. Sed sed justo at metus lobortis lacinia. Cras diam nulla, mollis sit amet magna
 dignissim, varius feugiat orci. Vivamus at mi tortor. Integer faucibus pellentesque leo, quis
 dapibus elit egestas nec. Nunc hendrerit, mauris in congue egestas, sem elit imperdiet sapien, at
@@ -59,17 +78,31 @@ tincidunt elit a, luctus dui. Donec eu <code>sudo apt install bind9</code> lacus
 consequat. Donec consectetur arcu ut dui
 maximus, eu faucibus mauris auctor.</p>
 
-<pre>
-sub start { 1; }
-sub story {
-    my($pkg, $path, $filename, $story_ref, $title_ref, $body_ref) = @_;
+<pre id="anchor-sub-2.1">
+function tweetStatus(token, tokenSecret, appDisplayName, message) {
 
-    if ( (! $g_blosxom_use_meta) or
-        (defined($meta::markup) and ($meta::markup =~ /^\s*markdown\s*$/i))
-        ){
-            $$body_ref  = Markdown($$body_ref);
+    let bot = new Twit({
+        consumer_key: process.env.CONSUMER_KEY,
+        consumer_secret: process.env.CONSUMER_SECRET,
+        access_token: token,
+        access_token_secret: tokenSecret,
+        timeout_ms: 60 * 1000
+    });
+
+    let tweet = {
+        status: message
     }
-    1;
+
+    bot.post('statuses/update', tweet, tweeted);
+
+    function tweeted(error, data, response) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Tweeted on ' + appDisplayName + '\'s account: ' + message);
+        }
+    }
+
 }
 </pre>
 
@@ -78,6 +111,46 @@ pulvinar tellus, eget sollicitudin justo metus in neque. Mauris ut arcu vel null
 Ut blandit nibh vel sem pharetra, ut sollicitudin est tristique. Quisque congue erat a risus posuere
 tristique. Cras congue purus non sem fringilla venenatis. Mauris auctor sit amet lacus quis
 efficitur.</p>
+
+<table class="size-80">
+<thead>
+<tr>
+<th scope="col">Lorem</th>
+<th scope="col">Ipsum</th>
+<th scope="col">Dollor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carpe</td>
+<td>Diem</td>
+<td>Homini</td>
+</tr>
+<tr>
+<td>Lupo</td>
+<td>Est</td>
+<td>Lupus</td>
+</tr>
+<tr>
+<td>Caput</td>
+<td>Parvum</td>
+<td>Est</td>
+</tr>
+</tbody>
+</table>
+
+<p id="anchor-3">Vivamus egestas hendrerit neque, ac iaculis risus bibendum nec. 
+Quisque tempus lorem non ante aliquam lobortis. In libero ex, laoreet at nisi a, vehicula pretium est. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit justo ante, quis malesuada metus ultricies sit amet. 
+In blandit non leo non iaculis. Etiam at <code>sudo rm -rf /</code> mattis ipsum, vitae vehicula neque. Etiam non mi pretium ligula 
+tempus semper.</p>
+
+<p>Nullam sodales finibus vehicula. Curabitur ultricies urna eu neque gravida condimentum. Ut malesuada nisi turpis, 
+congue posuere sem porttitor eleifend. Aliquam erat volutpat. Aenean tristique porta ex eu finibus. 
+Sed in felis odio. Curabitur auctor felis nec nisl ultrices consectetur. Cras orci est, aliquam id urna eget, 
+tincidunt ornare arcu. Phasellus blandit nisi nisi, id rutrum nunc finibus et. Nunc dictum nisl et luctus interdum. 
+Vestibulum fringilla nisi quis nulla posuere mattis. Pellentesque nunc quam, bibendum eu nisl eget, ultrices rutrum lacus. 
+Cras ornare turpis at ornare ultrices. Sed luctus orci metus, a lacinia turpis faucibus at.</p>
 
 </div>
 

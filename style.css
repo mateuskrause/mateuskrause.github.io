@@ -46,7 +46,7 @@
 }
 
 .content p {
-    margin-bottom: 0px !important;
+    margin-bottom: 1pc !important;
     text-align: justify;
 }
 
@@ -67,8 +67,73 @@
     max-width: 100% !important;
 }
 
+
 .content .date {
     color: gray;
     font-size: 14px;
     margin-bottom: 16px !important;
 }
+
+/* table */
+
+.content table {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1pc;
+    color: #212529;
+    border:1px solid #dee2e6;
+    float: center;
+}
+
+.content .size-80 {
+    width: 80%;
+}
+
+.content .size-100 {
+    width: 100%;
+}
+
+.content td, th {
+    padding: .3rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    border:1px solid #dee2e6;
+}
+
+.content thead th, td{
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    border-bottom-width: 2px;
+}
+
+/* table contents */
+
+.content .table-contents {
+    margin: 0;
+    width: auto;
+    display: table;
+    padding: 0pc;
+    margin-bottom: 1pc;
+    line-height: 1.7em;
+}
+
+.content .table-contents span {
+    margin-left: 23px;
+}
+
+.content .table-contents ol {
+    counter-reset: item;
+    margin-bottom: 0;
+}
+
+.content .table-contents li {
+    display: block;
+}
+
+.content .table-contents li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+}
+
+
