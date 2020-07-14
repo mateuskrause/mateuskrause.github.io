@@ -1,0 +1,116 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Test Page 1. - Penguin's Daydreams</title> <link rel="stylesheet" href="../style.css"> <link rel="shortcut icon" href="../images/site/favicon.png" /> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> </head> <body> <div class="container"> <div class="header py-4"> <div class="row align-items-center"> <div class="col-12 d-sm-none text-center"> <img src="../images/site/icon.png" class="header-image mr-2 mb-1"> </div> <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start"> <img src="../images/site/icon.png" class="header-image mr-2 d-none d-sm-block"> <a href="" class="header-link align-self-center">mateuskrause.github.io</a> </div> <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end"> <a href="" class="header-link mr-2">github</a> <span>/</span> <a href="" class="header-link ml-2">contact</a> </div> </div> <div class="content py-4">
+<h3>Test Page 1.</h3>
+<p class="date">Jul 8, 2020</p>
+
+<p>
+Test page 1. Test page 1. Test page 1. Test page 1. Test page 1. 
+Test page 1. Test page 1. Test page 1. Test page 1. Test page 1. 
+Test page 1. Test page 1. Test page 1. Test page 1. 
+</p>
+
+<p id="anchor-1">
+Curabitur nec odio orci. Sed ac sagittis mauris. Aenean eget bibendum odio. 
+Morbi dignissim metus faucibus cursus facilisis. Vestibulum nec ullamcorper urna, 
+in luctus justo. Maecenas mollis <code>make install</code> ultricies placerat. Donec porta magna ut turpis tincidunt, 
+at scelerisque purus viverra. Suspendisse feugiat metus mattis tellus ornare fringilla.
+</p>
+
+<figure>
+<img src="../images/articles/pingu.gif">
+<figcaption>A caption for the above image.</figcaption>
+</figure>
+
+<p id="anchor-2">Sed eu rutrum eros, sit amet gravida eros. Aliquam sollicitudin augue ligula, et imperdiet lacus
+ultricies nec. Sed sed justo at metus lobortis lacinia. Cras diam nulla, mollis sit amet magna
+dignissim, varius feugiat orci. Vivamus at mi tortor. Integer faucibus pellentesque leo, quis
+dapibus elit egestas nec. Nunc hendrerit, mauris in congue egestas, sem elit imperdiet sapien, at
+rhoncus mauris purus at enim. Fusce fermentum ornare arcu sed viverra. Curabitur nec massa rutrum,
+tincidunt elit a, luctus dui. Donec eu <code>sudo apt install bind9</code> lacus id dui porta
+consequat. Donec consectetur arcu ut dui
+maximus, eu faucibus mauris auctor.</p>
+
+<pre id="anchor-sub-2.1">
+function tweetStatus(token, tokenSecret, appDisplayName, message) {
+
+    let bot = new Twit({
+        consumer_key: process.env.CONSUMER_KEY,
+        consumer_secret: process.env.CONSUMER_SECRET,
+        access_token: token,
+        access_token_secret: tokenSecret,
+        timeout_ms: 60 * 1000
+    });
+
+    let tweet = {
+        status: message
+    }
+
+    bot.post('statuses/update', tweet, tweeted);
+
+    function tweeted(error, data, response) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Tweeted on ' + appDisplayName + '\'s account: ' + message);
+        }
+    }
+
+}
+</pre>
+
+<p>Maecenas nec pretium diam, sit amet interdum nisi. Sed cursus, risus id mattis aliquam, nisl ligula
+pulvinar tellus, eget sollicitudin justo metus in neque. Mauris ut arcu vel nulla elementum dapibus.
+Ut blandit nibh vel sem pharetra, ut sollicitudin est tristique. Quisque congue erat a risus posuere
+tristique. Cras congue purus non sem fringilla venenatis. Mauris auctor sit amet lacus quis
+efficitur.</p>
+
+<table class="size-80">
+<thead>
+<tr>
+<th scope="col">Lorem</th>
+<th scope="col">Ipsum</th>
+<th scope="col">Dollor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carpe</td>
+<td>Diem</td>
+<td>Homini</td>
+</tr>
+<tr>
+<td>Lupo</td>
+<td>Est</td>
+<td>Lupus</td>
+</tr>
+<tr>
+<td>Caput</td>
+<td>Parvum</td>
+<td>Est</td>
+</tr>
+</tbody>
+</table>
+
+<p id="anchor-3">Vivamus egestas hendrerit neque, ac iaculis risus bibendum nec. 
+Quisque tempus lorem non ante aliquam lobortis. In libero ex, laoreet at nisi a, vehicula pretium est. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit justo ante, quis malesuada metus ultricies sit amet. 
+In blandit non leo non iaculis. Etiam at <code>sudo rm -rf /</code> mattis ipsum, vitae vehicula neque. Etiam non mi pretium ligula 
+tempus semper.</p>
+
+<p>Nullam sodales finibus vehicula. Curabitur ultricies urna eu neque gravida condimentum. Ut malesuada nisi turpis, 
+congue posuere sem porttitor eleifend. Aliquam erat volutpat. Aenean tristique porta ex eu finibus. 
+Sed in felis odio. Curabitur auctor felis nec nisl ultrices consectetur. Cras orci est, aliquam id urna eget, 
+tincidunt ornare arcu. Phasellus blandit nisi nisi, id rutrum nunc finibus et. Nunc dictum nisl et luctus interdum. 
+Vestibulum fringilla nisi quis nulla posuere mattis. Pellentesque nunc quam, bibendum eu nisl eget, ultrices rutrum lacus. 
+Cras ornare turpis at ornare ultrices. Sed luctus orci metus, a lacinia turpis faucibus at.</p>
+</div>
+
+<div class="footer mt-4">
+<i>Penguin's Daydreams</i>
+<p>Made using a <a href="">custom script</a> and <a href="">Bootstrap</a></p>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>
