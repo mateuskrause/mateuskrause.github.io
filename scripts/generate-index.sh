@@ -8,7 +8,8 @@ echo $new_header > $output
 
 echo "<h5><strong>Articles</strong></h5>" >> $output
 
-for content in $(ls ../articles-src -1 | grep .html)
+
+for content in $(ls ../articles-src -1t | grep .html)
 do
 	cd ../articles-src/
 	
