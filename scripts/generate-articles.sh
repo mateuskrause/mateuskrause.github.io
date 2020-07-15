@@ -2,6 +2,11 @@
 header=../page-elements/header.html
 footer=../page-elements/footer.html
 
+#links fix
+sed1="s/href=\"style.css\"/href=\"..\/style.css\"/g"
+sed2="s/href=\"images\/site\/favicon.png\"/href=\"..\/images\/site\/favicon.png\"/g"
+sed3="s/src=\"images\/site\/icon.png\"/src=\"..\/images\/site\/icon.png\"/g"
+
 for content in $(ls ../articles-src -1 | grep .html)
 do
 	cd ../articles-src/
@@ -11,7 +16,7 @@ do
 	title=$(head -n 1 $content | cut -c 5- | rev | cut -c 6- | rev)
 	title+=" - Penguin's Daydreams"
 
-	new_header=$(cat $header | sed "s/<title><\/title>/<title>$title<\/title>/g")
+	new_header=$(cat $header | sed "s/<title><\/title>/<title>$title<\/title>/g" | sed $sed1 | sed $sed2 | sed $sed3)
 
 	if [ -f $output ] ; then
 		cat /dev/null > $output
